@@ -11,7 +11,7 @@ $access = (Get-Acl $childPath).Access | where { $_.IdentityReference -like $user
 if ($access.IdentityReference -like $username)
 { "Error: The username " + $username + " was found in " + $childPath}
 else
-{"Everything's ok"}
+{"No problem"}
 }
 
 #set the account to check was added 
